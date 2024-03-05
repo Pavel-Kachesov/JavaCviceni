@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaCviceni.iml" filepath="$PROJECT_DIR$/.idea/JavaCviceni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cviko01/cviko01.iml" filepath="$PROJECT_DIR$/cviko01/cviko01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cviko02/cviko02.iml" filepath="$PROJECT_DIR$/cviko02/cviko02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cviko03/cviko03.iml" filepath="$PROJECT_DIR$/cviko03/cviko03.iml" />
+    </modules>
+  </component>
+</project>

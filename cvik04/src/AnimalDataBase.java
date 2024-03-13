@@ -27,15 +27,33 @@ public class AnimalDataBase {
         return result;
     }
 
-    public double prumernyVek(){
+
+
+    public double prumernyVek() {
         double prumer = 0;
         double sum = 0;
-        for (Animal animal: this.animals){
-            prumer = animals.size();
-            sum += animal.getAge();
+        if (getNumberOfAnimal() == 0) {
+            return 0;}
+        else{
+            for (Animal animal : this.animals) {
+                prumer = animals.size();
+                sum += animal.getAge();
+            }
+            sum = sum / prumer;
+            return sum;
         }
-        sum = sum/prumer;
-        return sum;
+
+    }
+    public Animal nejstarsi() {
+        Animal nej = null;
+        for (Animal animal : this.animals) {
+            double i = 0;
+            if (animal.getAge() > i) {
+                i = animal.getAge();
+                nej = animal;
+            }
+        }
+        return nej;
     }
 
 

@@ -19,6 +19,7 @@ public class Cat implements Animal{
 
     @Override
     public void doSound() {
+        System.out.println("mau");
 
     }
 
@@ -28,5 +29,24 @@ public class Cat implements Animal{
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cat cat)) return false;
+
+        if (Double.compare(age, cat.age) != 0) return false;
+        return name.equals(cat.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name.hashCode();
+        temp = Double.doubleToLongBits(age);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
 }
